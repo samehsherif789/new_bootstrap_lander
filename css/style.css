@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.header-section {
+    background-image:
+        linear-gradient(rgba(70, 12, 206, 0.912), rgba(23, 0, 175, 0.6)),
+        url(../img/hero-bg-2.jpg);
+
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+
+
+.navbar {
+    background-color: rgba(8, 8, 117, 0.708);
+
+}
+
+@media (max-width: 768px) {
+    .header-section {
+        height: 100%;
+        text-align: center;
+    }
+
+    .header-section img {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+.about-section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid #1acc8d;
+    color: #1acc8d;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.about-section h2 {
+    font-weight: 700;
+    color: #040677;
+}
+
+
+
+.card-body i {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 0;
+    transition: all 0.4s ease-out 0s;
+        color: #00d084 !important; 
+
+
+}
+.card-body i:hover{
+    background-color: #00d084;
+    color: white !important;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.clients {
+    background-color: #f4f5fe;
+    padding: 60px 0;
+    margin-top: 60px;
+    padding-top: 100px;
+}
+
+.client_box {
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 45px;
+}
+
+
+.emojy {
+    font-size: xx-large;
+    position: absolute;
+    top: -40px;
+    left: 45%;
+    color: #1acc8d;
+}
+
+.team-item {
+    position: relative;
+}
+
+.team-card {
+    position: absolute;
+    top:92%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    background: #fff;
+    color: #000;
+    padding-top:8px;
+    padding-left: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.team-card i {
+    color: #555; 
+    font-size: 15px;
+    margin: 0 8px;
+}
+.team-card i:hover{
+    color: #1acc8d;
+    
+}
+
+.footer {
+  background-color: #0b0466;
+}
+
+.footer h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  color: #00d084;
+}
+
+.social i {
+  font-size: 18px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social i:hover {
+  background-color: #00d084;
+  border-color: #00d084;
+}
+
+.footer input {
+  border-radius: 5px 0 0 5px;
+}
+
+.footer button {
+  border-radius: 0 5px 5px 0;
+}
+/* 1. Navbar Hover */
+.navbar .nav-link {
+    position: relative;
+    transition: 0.3s;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1acc8d;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar .nav-link:hover {
+    color: #1acc8d !important;
+}
+
+.btn-success {
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.feature_item {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.feature_item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    background-color: #f9f9ff;
+}
+
+.gallery img {
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.gallery .col-lg-3 {
+    overflow: hidden;
+}
+
+.team-item img {
+    transition: 0.4s;
+}
+
+.team-item:hover img {
+    transform: scale(1.05);
+}
+
+.team-item:hover .team-card {
+    top: 80%;
+}
+
+.client_box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.footer ul li {
+    transition: 0.3s;
+}
+
+.footer ul li:hover {
+    padding-left: 8px;
+    color: #1acc8d;
+}
+
+.social i {
+    transition: 0.3s;
+}
+
+.social i:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.feature_item{
+    margin-bottom: 20px;
+}
